@@ -1,1 +1,1 @@
-# Thinkful-Projects this is a place to show my data science projects at Thinkful
+# This is a place to share my drills and projects while going through the Thinkful data science program.
