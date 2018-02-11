@@ -1,0 +1,32 @@
+WHAT IS LOCATION OF MAX TEMPERATURE?
+SELECT 
+     city,
+     MaxTemperatureF,
+     max(MaxTemperatureF)
+FROM 
+     weather, stations
+GROUP BY city
+
+HOW MANY TRIPS AT EACH STATION?
+SELECT 
+    start_station,
+		COUNT(*) trip_id
+FROM 
+    trips
+GROUP BY 1
+
+WHAT IS SHORTEST TRIP THAT HAPPENED?
+SELECT 
+    duration,
+    min(duration)
+FROM 
+    trips
+GROUP BY 1
+
+WHAT IS THE AVERAGE TRIP DURATION, BY END STATION?
+SELECT 
+         end_station,
+         avg(duration)
+FROM 
+        trips
+GROUP BY 1
